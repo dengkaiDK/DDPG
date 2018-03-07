@@ -1,15 +1,13 @@
 import tensorflow as tf 
 import numpy as np
 import math
-
-
 # Hyper Parameters
 LAYER1_SIZE = 400
 LAYER2_SIZE = 300
 LEARNING_RATE = 1e-4
 TAU = 0.001
 BATCH_SIZE = 64
-
+#definite ActorNetwork
 class ActorNetwork:
 	"""docstring for ActorNetwork"""
 	def __init__(self,sess,state_dim,action_dim):
